@@ -1,0 +1,36 @@
+
+button {
+  width: 151px;
+  height: 38px;
+  background-color: #e7eeee;
+  outline: none;
+  border:0;
+  font-family: AxiformaBook;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #48484a;
+  cursor:pointer;
+}
+button:hover{
+  background-color: #e7eaee;
+}
+span {
+    float: left;
+    width: 132px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 9px;
+}
+img {
+  float: right;
+  margin-right: 10px;
+  margin-top:15px;
+  margin-bottom: 15px;
+  width: 9px;
+  height: 7px;
+  object-fit: contain;
+}

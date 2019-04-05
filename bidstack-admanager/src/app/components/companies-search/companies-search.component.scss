@@ -1,0 +1,28 @@
+input {
+  float: right;
+  width: 128px;
+  height: 38px;
+  background-color: #e7eaee;
+  border: 0;
+  margin-right: 15px;
+  font-family: AxiformaBook;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  color: #48484a;
+}
+input::placeholder {
+    width: 92px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 9px;
+    background-image: url('../../../assets/img/search.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-size: 15px 17px;
+    background-position-x:99px;
+    background-position-y:2px;
+ }

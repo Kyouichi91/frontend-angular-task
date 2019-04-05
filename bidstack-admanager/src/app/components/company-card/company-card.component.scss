@@ -1,0 +1,112 @@
+
+
+.company-card {
+  padding: 23px 36px 36px 36px;
+  height: 100%;
+  position: relative;
+  background-color: #fafafa;
+}
+.company-card:hover {
+  background-color: #e7eaee;
+}
+.activecard {
+  background-color:#f4f5f7;
+}
+.company-card-upper {
+  width: 100%;
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  border-radius: 100%;
+}
+h1 {
+  display: inline;
+  font-family: AxiformaSemiBold;
+  font-size: 21px;
+  font-weight: 600;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.3px;
+  padding-left: 18px;
+}
+.mousedowned {
+  color:#ff6284;
+  text-decoration: underline;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #d1d4d8;
+  margin-top: 17px;
+  margin-bottom: 32px;
+}
+.company-card-lower {
+  font-family: AxiformaMeduim;
+  font-size: 17px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #898989;
+  border-spacing:15px;
+
+
+}
+.card-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top:10px;
+  height: 22px;
+}
+
+
+.view {
+  float: right;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  font-size: 14px;
+  font-family: AxiformaRegular;
+  cursor: default;
+}
+.view-box {
+  font-family: AxiformaRegular;
+  background-color: #fff;
+  color:#48484a;
+  font-size: 14px;
+  position: absolute;
+  box-shadow: 2px 2px 7px 0 rgba(129, 129, 129, 0.22);
+  bottom: 25px;
+  padding-top:6px;
+  padding-bottom:15px;
+  padding-left:18px;
+  padding-right:15px;
+  z-index: 10;
+}
+.view-box::after {
+  content: '';
+  position: absolute;
+  bottom: -16px;
+  border: 8px solid transparent;	border-top: 8px solid #fff;
+  left:46%;
+
+}
+.view-item {
+  white-space:nowrap;
+  line-height: 1.43;
+  height: 18px;
+  font-family: AxiformaRegular;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  margin-top: 7px;
+}

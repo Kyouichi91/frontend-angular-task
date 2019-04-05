@@ -1,0 +1,48 @@
+        <div class="company-card"
+            (mousedown)="isActive()"
+            (mouseup)="isActive()"
+            [class.activecard]="cardActiveClass">
+            <div class="company-card-upper"
+                 [ngStyle]="{'color':data.active_games.length > 0 ? '#000' : '#898989' }">
+                 <img src="{{ data.logo }}" />
+                 <h1 [class.mousedowned]="nameActiveClass">
+                        {{ data.company_name }}
+                  </h1>
+            </div>
+            <div class="line"></div>
+            <div class="company-card-lower">
+              <div class="card-row">
+                  <span [ngStyle]="{'color':(data.companies | status:true) > 0 ? '#000' : '#898989' }">
+                        {{ data.companies | status:true }} Active Campaigns
+                  </span>
+                  <span class="view"
+                        appView
+                        [viewdata]="data.companies | status:true:'array'"
+                        [ngStyle]="{'color':(data.companies | status:true) > 0 ? '#ff6284' : '#d8d8e7' }">
+                        View
+                  </span>
+              </div>
+              <div class="card-row">
+                  <span>
+                        {{ data.companies | status:false}} Previous Campaigns
+                  </span>
+                  <span class="view"
+                        appView
+                        [viewdata]="data.companies | status:false:'array'"
+                        [ngStyle]="{'color':(data.companies | status:false) > 0 ? '#ff6284' : '#d8d8e7' }">
+                        View
+                  </span>
+              </div>
+              <div class="card-row">
+                  <span [ngStyle]="{'color':data.active_games.length > 0 ? '#000' : '#898989' }">
+                        {{ data.active_games.length+" Active Games"}}
+                  </span>
+                  <span class="view"
+                        appView
+                        [viewdata]="data.active_games"
+                        [ngStyle]="{'color':data.active_games.length > 0 ? '#ff6284' : '#d8d8e7' }">
+                        View
+                  </span>
+              </div>
+            </div>
+        </div>

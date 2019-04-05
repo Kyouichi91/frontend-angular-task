@@ -1,0 +1,43 @@
+<div class="company-detail">
+  <div class="company-detail-upper">
+    <img src="{{company.logo}}"/>
+    <h1>{{company.company_name}}</h1>
+  </div>
+  <div class="devider"></div>
+  <div class="company-detail-lower">
+    <div class="companies-info">
+        <h2>Active Companies:</h2>
+        <ul>
+            <div *ngIf="(company.companies | status:true)>0">
+                <li *ngFor="let item of company.companies | status:true:'array'">{{item}}</li>
+            </div>
+            <div *ngIf="(company.companies | status:true)==0">
+                <li>-</li>
+            </div>
+        </ul>
+    </div>
+    <div class="companies-info">
+        <h2>Previous Companies:</h2>
+        <ul>
+            <div *ngIf="(company.companies | status:false)>0">
+                <li *ngFor="let item of company.companies | status:false:'array'">{{item}}</li>
+            </div>
+            <div *ngIf="(company.companies | status:false)==0">
+                <li>-</li>
+            </div>
+        </ul>
+    </div>
+    <div class="companies-info">
+        <h2>Active Games:</h2>
+        <ul>
+          <div *ngIf="(company.active_games.length)>0">
+              <li *ngFor="let item of company.active_games">{{item}}</li>
+          </div>
+          <div *ngIf="(company.active_games.length)==0">
+              <li>-</li>
+          </div>
+        </ul>
+    </div>
+  </div>
+  <button (click)="toListClick()">Back To List</button>
+</div>

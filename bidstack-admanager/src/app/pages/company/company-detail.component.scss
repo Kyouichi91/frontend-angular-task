@@ -1,0 +1,63 @@
+
+.company-detail{
+  padding: 50px;
+  border: 2px solid #e7eaee;
+  border-radius: 5px;
+
+}
+.company-detail-upper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.company-detail-lower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+    font-family: AxiformaMeduim;
+}
+.devider {
+  height: 1px;
+  width: 100%;
+  background-color: #d1d4d8;
+  margin: 50px 0;
+}
+img {
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+}
+h1 {
+  color: #000;
+  font-size: 40px;
+  font-family: AxiformaSemiBold;
+}
+ul {
+  list-style-type: none;
+  margin-top: 15px;
+
+}
+li {
+  margin-top: 5px;
+}
+button {
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 50px;
+  width: 151px;
+  height: 38px;
+  background-color: #e7eeee;
+  outline: none;
+  border: 0;
+  font-family: AxiformaBook;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #48484a;
+}
